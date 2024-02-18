@@ -127,3 +127,9 @@ Replace `username` and `databasename` with your PostgreSQL username and database
 - Ensure you have a backup of your database before running these scripts.
 - These scripts should be run during a maintenance window when the database is not in active use.
 
+
+If you have any problem, or question feel free to contact with me: fuad0fataliyev0@outlook.com
+You can also watch video before running codes: https://youtu.be/DZy_FfsQqxw
+
+Best regards,
+Fuad Fataliyev
