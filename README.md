@@ -71,9 +71,9 @@ COPY INTERESTS(STUDENT_ID, INTEREST) FROM '[file_path]/interests.txt' WITH DELIM
 Replace [file_path] with the absolute path to the interests.txt file on your system.
 
 For me it is:
-
+```sql
 /Users/fuadfatali/Desktop/Fuad_Fataliyev_13537_POM1/students.txt
-
+```
 
 Viewing Data
 
