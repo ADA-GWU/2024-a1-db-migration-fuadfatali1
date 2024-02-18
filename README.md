@@ -25,6 +25,7 @@ CREATE TABLE STUDENTS (
   ST_NAME VARCHAR(20),
   ST_LAST VARCHAR(20)
 );
+```
 
 
 ST_ID: Auto-incrementing integer serving as a unique identifier for each student.
@@ -35,10 +36,12 @@ ST_LAST: A string field to store the student's last name, up to 20 characters.
 INTERESTS Table
 The INTERESTS table is used to store the interests of each student, linked to the STUDENTS table by a foreign key.
 
+```sql
 CREATE TABLE INTERESTS (
   STUDENT_ID INT REFERENCES STUDENTS(ST_ID),
   INTEREST VARCHAR(20)
 );
+```
 
 
 STUDENT_ID: Integer that references the ST_ID of the STUDENTS table, establishing a relationship between the two tables.
@@ -76,9 +79,10 @@ Viewing Data
 
 To verify the data has been imported correctly, the following SELECT statements can be run:
 
+```sql
 SELECT * FROM STUDENTS;
 SELECT * FROM INTERESTS;
-
+```
 Notes
 
 Ensure that the PostgreSQL server has read access to the specified file paths.
@@ -96,9 +100,9 @@ The `migration.sql` script performs the following actions:
 ### How to Run
 
 Execute the `migration.sql` script in your PostgreSQL database using:
-
+```sql
 psql -U username -d databasename -a -f migration.sql
-
+```
 
 Replace `username` and `databasename` with your PostgreSQL username and database name, respectively.
 
@@ -112,7 +116,9 @@ The `rollback.sql` script can revert the changes made by the `migration.sql` scr
 
 Execute the `rollback.sql` script in your PostgreSQL database using:
 
+```sql
 psql -U username -d databasename -a -f rollback.sql
+```
 
 Replace `username` and `databasename` with your PostgreSQL username and database name, respectively.
 
