@@ -52,16 +52,16 @@ Data Importing
 Importing into STUDENTS
 Data will be imported into the STUDENTS table from a text file. The file should be formatted with space-separated values, with each line representing a record.
 
-
+```sql
 COPY STUDENTS(ST_ID, ST_NAME, ST_LAST) FROM '[file_path]/students.txt' WITH DELIMITER ' ';
-
+```
 
 Replace [file_path] with the absolute path to the interests.txt file on your system. 
 
 For me it is:
-
+```sql
 /Users/fuadfatali/Desktop/Fuad_Fataliyev_13537_POM1/students.txt
-
+```
 
 Importing into INTERESTS
 Similarly, data will be imported into the INTERESTS table from a text file, which should also be formatted with space-separated values.
